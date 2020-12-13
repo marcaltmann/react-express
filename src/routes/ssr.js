@@ -23,7 +23,6 @@ router.get("/", async (req, res) => {
 
     const hbsTemplate = hbs.compile(theHtml);
     const reactComp = renderToString(<App />);
-    console.log(reactComp);
     const htmlToSend = hbsTemplate({ reactele: reactComp });
 
     res.setHeader('Cache-Control', 'max-age=5000');

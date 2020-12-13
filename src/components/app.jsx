@@ -9,7 +9,8 @@ class App extends React.Component {
 
     this.state = {
       name: "",
-      msg: ""
+      msg: "",
+      number: 5,
     };
   }
 
@@ -43,6 +44,7 @@ class App extends React.Component {
     return (
       //do something here where there is a button that will replace the text
       <div>
+        <p>Number: {this.state.number}</p>
         <label>Your name</label>
         <input
           type="text"
